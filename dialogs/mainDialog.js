@@ -58,7 +58,7 @@ class MainDialog extends ComponentDialog {
         let results = await axios({
              url: global.getProfileUrl,
              params: {
-               ecid:'ecid',
+               ecid:ecid,
                orgId:orgId,
                sandboxName:sandboxName,
                entityIdNS: 'ecid',
