@@ -58,7 +58,7 @@ class MainDialog extends ComponentDialog {
         let results = await axios({
              url: global.getProfileUrl,
              params: {
-               ecid:ecid,
+               ecid:'ecid',
                orgId:orgId,
                sandboxName:sandboxName,
                entityIdNS: 'ecid',
@@ -74,7 +74,6 @@ class MainDialog extends ComponentDialog {
                               // console.log("####email :######"+Object.values(Object.values(Object.values(results.data.result)[0].entity)[0].identification.core.email);
 
               loggedInUser = Object.values(results.data.result)[0].entity.person.name.firstName;
-              accountId = Object.values(Object.values(results.data.result)[0].entity)[1].identification.fsi.accountId ;
 
            console.log("logged in user",loggedInUser);
          }
