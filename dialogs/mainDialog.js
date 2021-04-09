@@ -99,10 +99,10 @@ class MainDialog extends ComponentDialog {
             });
          global.streamingEnpointUrl = coreResults.data.result.streamingEnpointUrl;
          global.tenantID = coreResults.data.result.tenantID;
-         global.schemaID = "93ee928c3766396daccb4145ef904429acb288f408bbbd94";
+         global.schemaID = "de2abb0bb4a1453c9ec44392e0f61074";
          let dataSets = coreResults.data.result.dataSets;
          //getDatasetByName
-         let datasetID = Object.entries(dataSets).find(obj => obj[1].name === "Demo System - Event Dataset for Website (FSI v1.0)")[0].replace(/%/g, "");
+         let datasetID = Object.entries(dataSets).find(obj => obj[1].name === "Demo System - Event Dataset for Website (Retail v1.2)")[0].replace(/%/g, "");
 
          //Update XDM schema
          global.formData = {
